@@ -34,5 +34,5 @@ fi
 
 echo Updating resource...
 aws apigateway update-resource --rest-api-id $api_id --resource-id $resource_id \
-        --patch-operations op=replace,path=/pathPart,value=$value --region ap-southeast-2
-aws apigateway create-deployment --rest-api-id $api_id --stage-name test --region  ap-southeast-2
+        --patch-operations op=replace,path=/pathPart,value=$value --region us-east-1
+aws apigateway create-deployment --rest-api-id $api_id --stage-name test --region  us-east-1
